@@ -79,7 +79,54 @@ namespace QueueLinkedList
     {
         static void Main(string[] args)
         {
-            
+            Queue q = new Queue();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display values");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.Write("Enter an element : ");
+                                string element = Console.ReadLine();
+                                Console.WriteLine();
+                                q.enqueue(element);
+                            }
+                            break;
+                        case '2':
+                            {
+                                q.dequeue();
+                            }
+                            break;
+                        case '3':
+                            {
+                                q.display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option!");
+                            }
+                            break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the value entered. ");
+                }
+            }
         }
     }
 }
