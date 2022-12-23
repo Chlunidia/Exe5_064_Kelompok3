@@ -61,6 +61,18 @@ namespace QueueLinkedList
             // If chlunidia becomes NULL, then change rear also as NULL
             if (this.chlunidia == null)
                 this.rear = null;
-        }        
+        }
+        public void display()
+        {
+            if (chlunidia == null)
+            {
+                Console.WriteLine("Queue is empty.");
+                return;
+            }
+            Console.WriteLine("\nElements in the queue are: \n");
+            QNode display;
+            for (display = chlunidia; display != null; display = display.next)
+                Console.WriteLine(display.key);
+        }
     }
 }
