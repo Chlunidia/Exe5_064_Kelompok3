@@ -75,4 +75,8 @@ namespace QueueLinkedList
                 Console.WriteLine(display.key);
         }
     }
+    class Program
+    {
+        
+    }
 }
