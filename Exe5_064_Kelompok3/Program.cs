@@ -46,5 +46,21 @@ namespace QueueLinkedList
             this.rear.next = temp;
             this.rear = temp;
         }
+        // Method to remove an key from queue.
+        public void dequeue()
+        {
+            // If queue is empty, return NULL.
+            if (this.chlunidia == null)
+            {
+                Console.WriteLine("Queue is empty.");
+                return;
+            }
+            // Store previous chlunidia and move chlunidia one node ahead
+            Console.WriteLine("\nThe element deleted from the queue is.");
+            this.chlunidia = this.chlunidia.next;
+            // If chlunidia becomes NULL, then change rear also as NULL
+            if (this.chlunidia == null)
+                this.rear = null;
+        }        
     }
 }
