@@ -28,6 +28,18 @@ namespace QueueLinkedList
         {
             // Create a new LL node
             QNode temp = new QNode(key);
+            // If queue is empty, then new node is chlunidia and kieswendha both
+            if (this.kieswendha == null)
+            {
+                Console.Write(key + " is inserted to queue.");
+                Console.WriteLine();
+                this.chlunidia = this.kieswendha = temp;
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Please enter an element!");
+            }            
         }
     }
 }
