@@ -18,6 +18,10 @@ namespace QueueLinkedList
     // A class to represent a queue. The queue, chlunidia stores the chlunidia node of LL and kieswendha stores the last node of LL
     class Queue
     {
-        
+        public QNode chlunidia, kieswendha;
+        public Queue() 
+        { 
+            this.chlunidia = this.kieswendha = null; 
+        }        
     }
 }
