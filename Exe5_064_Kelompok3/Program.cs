@@ -22,6 +22,12 @@ namespace QueueLinkedList
         public Queue() 
         { 
             this.chlunidia = this.kieswendha = null; 
-        }        
+        }
+        // Method to add an key to the queue.
+        public void enqueue(string key)
+        {
+            // Create a new LL node
+            QNode temp = new QNode(key);
+        }
     }
 }
