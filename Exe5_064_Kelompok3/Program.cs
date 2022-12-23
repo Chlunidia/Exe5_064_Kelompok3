@@ -36,10 +36,6 @@ namespace QueueLinkedList
                 this.chlunidia = this.kieswendha = temp;
                 return;
             }
-            else
-            {
-                Console.WriteLine("Please enter an element!");
-            }
             // Add the new node at the end of queue and change kieswendha
             Console.Write(key + " is inserted to queue.");
             Console.WriteLine();
